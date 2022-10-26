@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Renato's Game</title>
+    <!-- Links to JS file -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <!-- adding the arcade background -->
+  <body
+    style="
+      background-image: url('/arcade3.png');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    "
+  >
+    <!-- This is the whole game -->
+    <div id="game">
+      <!-- Score Kept Here -->
+      <div
+        id="scoreTally"
+        style="
+          border: thick solid #d220ff;
+          align-content: center;
+          text-align: center;
+        "
+      >
+        <!-- initial Score value to display-->
+        0 vs 0
+      </div>
+      <br />
+      <!-- The actual Play Space is here  -->
+      <div>
+        <!-- How to use canvas: https://www.w3schools.com/html/html5_canvas.asp -->
+        <!-- The HTML <canvas> element is used to draw graphics, on the fly, via JavaScript.
+
+          The <canvas> element is only a container for graphics. You must use JavaScript to actually draw the graphics.
+          
+          Canvas has several methods for drawing paths, boxes, circles, text, and adding images. -->
+        <canvas
+          id="board"
+          width="800"
+          height="490"
+          style="border: thick solid #00fff2; align-content: center"
+        ></canvas>
+      </div>
+      <br />
+      <div>
+        <audio id="myAudio" controls>
+          <source src="games.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <button id="newGame">New Game</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+#game {
+  text-align: center;
+  align-content: center;
+}
+#board {
+  border: 10px solid;
+}
+#scoreTally {
+  font-family: "Arial";
+  color: rgb(95, 249, 221);
+  font-size: 90px;
+  font-style: bold;
+  align-content: center;
+}
+#newGame {
+  font-family: "Arial";
+  font-size: 20px;
+  width: 400px;
+  height: 30px;
+  border: 1px solidf;
+  border-radius: 15px;
+}
+#myAudio {
+  align-content: center;
+}
